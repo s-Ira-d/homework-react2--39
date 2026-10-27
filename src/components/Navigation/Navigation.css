@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 6%;
+  background: #fff;
+  box-shadow: 0 3px 18px #17255412;
+}
+
+.brand {
+  color: #4f46e5;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navigation a {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navigation a.active {
+  color: #4f46e5;
+}
+
+@media (max-width: 560px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
