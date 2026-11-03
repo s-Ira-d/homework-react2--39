@@ -1,5 +1,4 @@
 import { Navigate, Outlet } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { useAuth } from '../../context/AuthContext';
 
 export default function RestrictedRoute() {

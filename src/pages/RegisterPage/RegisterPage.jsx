@@ -1,27 +1,27 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { useAuth } from '../../context/AuthContext';
 import './RegisterPage.css';
 
 export default function RegisterPage() {
   const { register } = useAuth();
   const navigate = useNavigate();
+
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = async event => {
-    event.preventDefault();
+  const handleSubmit = async e => {
+    e.preventDefault();
+
     setError('');
     setSubmitting(true);
 
-    const form = event.currentTarget;
-    const data = new FormData(form);
+    const form = e.currentTarget;
 
     const credentials = {
-      name: data.get('name').trim(),
-      email: data.get('email').trim(),
-      password: data.get('password'),
+      name: form.elements.name.value,
+      email: form.elements.email.value,
+      password: form.elements.password.value,
     };
 
     try {
@@ -91,5 +91,3 @@ export default function RegisterPage() {
     </main>
   );
 }
-
-RegisterPage.propTypes = {};

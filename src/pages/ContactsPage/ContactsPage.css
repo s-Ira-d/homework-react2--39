@@ -68,3 +68,9 @@
     padding: 18px;
   }
 }
+
+.contacts-layout > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

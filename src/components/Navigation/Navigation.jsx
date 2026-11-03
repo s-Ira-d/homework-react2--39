@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import './Navigation.css';
 import { useAuth } from '../../context/AuthContext';
 import UserMenu from '../UserMenu/UserMenu';

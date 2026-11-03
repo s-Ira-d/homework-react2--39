@@ -39,6 +39,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async credentials => {
     const { data } = await api.post('/users/signup', credentials);
+
     localStorage.setItem('token', data.token);
     setUser(data.user);
   };

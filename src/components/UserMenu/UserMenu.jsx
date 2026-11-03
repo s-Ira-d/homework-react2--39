@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import './UserMenu.css';

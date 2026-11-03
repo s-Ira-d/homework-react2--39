@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import PropTypes from 'prop-types';
 import { api } from '../../api/api';
 import { useAuth } from '../../context/AuthContext';
 import ContactForm from '../../components/ContactForm/ContactForm';
@@ -79,14 +78,17 @@ export default function ContactsPage() {
       </section>
 
       <div className="contacts-layout">
-        <section className="contacts-panel">
-          <h2>Новий контакт</h2>
-          <ContactForm onAdd={handleAdd} />
+        <div>
+          <section className="contacts-panel">
+            <h2>Новий контакт</h2>
+            <ContactForm onAdd={handleAdd} />
+          </section>
+
           <section className="contacts-panel">
             <h2>Мій профіль</h2>
             <ProfileForm />
           </section>
-        </section>
+        </div>
 
         <section className="contacts-panel">
           <div className="contacts-title">
