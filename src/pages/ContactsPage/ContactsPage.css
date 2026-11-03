@@ -59,16 +59,6 @@
   font-weight: 700;
 }
 
-@media (max-width: 760px) {
-  .contacts-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .contacts-panel {
-    padding: 18px;
-  }
-}
-
 .contacts-layout > div {
   display: flex;
   flex-direction: column;

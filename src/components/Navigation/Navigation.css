@@ -31,10 +31,3 @@
 .navigation a.active {
   color: #4f46e5;
 }
-
-@media (max-width: 560px) {
-  .header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
